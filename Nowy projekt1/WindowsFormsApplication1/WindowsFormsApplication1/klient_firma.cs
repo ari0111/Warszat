@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class klient_prywatny : Form
+    public partial class klient_firma : Form
     {
-        public klient_prywatny()
+        public klient_firma()
         {
             InitializeComponent();
-        }
-
-        private void klient_prywatny_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
