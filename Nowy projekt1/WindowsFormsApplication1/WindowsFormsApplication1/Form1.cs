@@ -19,7 +19,16 @@ namespace WindowsFormsApplication1
 
         private void Menu_Load(object sender, EventArgs e)
         {
-
+            this.Hide(); //ukrywasz form-e
+            logowanie fl = new logowanie();
+            fl.ShowInTaskbar = false;//nie pokazujesz na pasku zadań
+            fl.MaximizeBox = false; //nie ma ikonki maksymalizacji
+            fl.MinimizeBox = false; //nie ma ikonki minimalizacji
+            fl.ShowDialog();//wyświetlasz
+            string login = "login";
+            string haslo = "haslo";
+            
+           
         }
     }
 }
