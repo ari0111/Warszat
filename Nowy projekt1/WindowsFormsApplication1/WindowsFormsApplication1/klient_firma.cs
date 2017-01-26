@@ -25,16 +25,11 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void klient_firma_Load(object sender, EventArgs e)
+        private void klinet_firma_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dataSet1.Table' table. You can move, or remove it, as needed.
             this.tableTableAdapter.Fill(this.dataSet1.Table);
 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }
