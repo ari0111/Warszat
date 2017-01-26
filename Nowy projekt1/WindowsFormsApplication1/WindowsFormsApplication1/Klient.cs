@@ -16,5 +16,21 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                klient_prywatny form = new klient_prywatny();
+                form.Show();
+            }
+
+            if (checkBox2.Checked)
+            {
+                klient_firma form = new klient_firma();
+                form.Show();
+
+            }
+        }
     }
 }
