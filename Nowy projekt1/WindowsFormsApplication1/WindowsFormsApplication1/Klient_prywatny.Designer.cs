@@ -32,18 +32,16 @@
             System.Windows.Forms.Label idLabel;
             System.Windows.Forms.Label imieLabel;
             System.Windows.Forms.Label nazwiskoLabel;
-            System.Windows.Forms.Label nazwa_FirmyLabel;
             System.Windows.Forms.Label miastoLabel;
             System.Windows.Forms.Label ulicaLabel;
             System.Windows.Forms.Label kod_PocztowyLabel;
             System.Windows.Forms.Label telefonLabel;
             System.Windows.Forms.Label emailLabel;
-            System.Windows.Forms.Label nIPLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(klient_prywatny));
-            this.dataSet1 = new WindowsFormsApplication1.DataSet1();
+            this.bazaklientowDataSet = new WindowsFormsApplication1.bazaklientowDataSet();
             this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tableTableAdapter = new WindowsFormsApplication1.DataSet1TableAdapters.TableTableAdapter();
-            this.tableAdapterManager = new WindowsFormsApplication1.DataSet1TableAdapters.TableAdapterManager();
+            this.tableTableAdapter = new WindowsFormsApplication1.bazaklientowDataSetTableAdapters.TableTableAdapter();
+            this.tableAdapterManager = new WindowsFormsApplication1.bazaklientowDataSetTableAdapters.TableAdapterManager();
             this.tableBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
@@ -53,13 +51,11 @@
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.imieTextBox = new System.Windows.Forms.TextBox();
             this.nazwiskoTextBox = new System.Windows.Forms.TextBox();
-            this.nazwa_FirmyTextBox = new System.Windows.Forms.TextBox();
             this.miastoTextBox = new System.Windows.Forms.TextBox();
             this.ulicaTextBox = new System.Windows.Forms.TextBox();
             this.kod_PocztowyTextBox = new System.Windows.Forms.TextBox();
             this.telefonTextBox = new System.Windows.Forms.TextBox();
             this.emailTextBox = new System.Windows.Forms.TextBox();
-            this.nIPTextBox = new System.Windows.Forms.TextBox();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -70,28 +66,26 @@
             idLabel = new System.Windows.Forms.Label();
             imieLabel = new System.Windows.Forms.Label();
             nazwiskoLabel = new System.Windows.Forms.Label();
-            nazwa_FirmyLabel = new System.Windows.Forms.Label();
             miastoLabel = new System.Windows.Forms.Label();
             ulicaLabel = new System.Windows.Forms.Label();
             kod_PocztowyLabel = new System.Windows.Forms.Label();
             telefonLabel = new System.Windows.Forms.Label();
             emailLabel = new System.Windows.Forms.Label();
-            nIPLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaklientowDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingNavigator)).BeginInit();
             this.tableBindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataSet1
+            // bazaklientowDataSet
             // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.bazaklientowDataSet.DataSetName = "bazaklientowDataSet";
+            this.bazaklientowDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tableBindingSource
             // 
             this.tableBindingSource.DataMember = "Table";
-            this.tableBindingSource.DataSource = this.dataSet1;
+            this.tableBindingSource.DataSource = this.bazaklientowDataSet;
             // 
             // tableTableAdapter
             // 
@@ -101,7 +95,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.TableTableAdapter = this.tableTableAdapter;
-            this.tableAdapterManager.UpdateOrder = WindowsFormsApplication1.DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = WindowsFormsApplication1.bazaklientowDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // tableBindingNavigator
             // 
@@ -167,7 +161,7 @@
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(12, 38);
+            idLabel.Location = new System.Drawing.Point(12, 39);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(19, 13);
             idLabel.TabIndex = 1;
@@ -176,15 +170,15 @@
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(96, 35);
+            this.idTextBox.Location = new System.Drawing.Point(96, 36);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(100, 20);
+            this.idTextBox.Size = new System.Drawing.Size(164, 20);
             this.idTextBox.TabIndex = 2;
             // 
             // imieLabel
             // 
             imieLabel.AutoSize = true;
-            imieLabel.Location = new System.Drawing.Point(12, 64);
+            imieLabel.Location = new System.Drawing.Point(12, 65);
             imieLabel.Name = "imieLabel";
             imieLabel.Size = new System.Drawing.Size(29, 13);
             imieLabel.TabIndex = 3;
@@ -193,15 +187,15 @@
             // imieTextBox
             // 
             this.imieTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "Imie", true));
-            this.imieTextBox.Location = new System.Drawing.Point(96, 61);
+            this.imieTextBox.Location = new System.Drawing.Point(96, 62);
             this.imieTextBox.Name = "imieTextBox";
-            this.imieTextBox.Size = new System.Drawing.Size(100, 20);
+            this.imieTextBox.Size = new System.Drawing.Size(164, 20);
             this.imieTextBox.TabIndex = 4;
             // 
             // nazwiskoLabel
             // 
             nazwiskoLabel.AutoSize = true;
-            nazwiskoLabel.Location = new System.Drawing.Point(12, 90);
+            nazwiskoLabel.Location = new System.Drawing.Point(12, 91);
             nazwiskoLabel.Name = "nazwiskoLabel";
             nazwiskoLabel.Size = new System.Drawing.Size(56, 13);
             nazwiskoLabel.TabIndex = 5;
@@ -210,129 +204,95 @@
             // nazwiskoTextBox
             // 
             this.nazwiskoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "Nazwisko", true));
-            this.nazwiskoTextBox.Location = new System.Drawing.Point(96, 87);
+            this.nazwiskoTextBox.Location = new System.Drawing.Point(96, 88);
             this.nazwiskoTextBox.Name = "nazwiskoTextBox";
-            this.nazwiskoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nazwiskoTextBox.Size = new System.Drawing.Size(164, 20);
             this.nazwiskoTextBox.TabIndex = 6;
-            // 
-            // nazwa_FirmyLabel
-            // 
-            nazwa_FirmyLabel.AutoSize = true;
-            nazwa_FirmyLabel.Location = new System.Drawing.Point(12, 116);
-            nazwa_FirmyLabel.Name = "nazwa_FirmyLabel";
-            nazwa_FirmyLabel.Size = new System.Drawing.Size(70, 13);
-            nazwa_FirmyLabel.TabIndex = 7;
-            nazwa_FirmyLabel.Text = "Nazwa Firmy:";
-            // 
-            // nazwa_FirmyTextBox
-            // 
-            this.nazwa_FirmyTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "Nazwa Firmy", true));
-            this.nazwa_FirmyTextBox.Location = new System.Drawing.Point(96, 113);
-            this.nazwa_FirmyTextBox.Name = "nazwa_FirmyTextBox";
-            this.nazwa_FirmyTextBox.Size = new System.Drawing.Size(100, 20);
-            this.nazwa_FirmyTextBox.TabIndex = 8;
             // 
             // miastoLabel
             // 
             miastoLabel.AutoSize = true;
-            miastoLabel.Location = new System.Drawing.Point(12, 142);
+            miastoLabel.Location = new System.Drawing.Point(12, 116);
             miastoLabel.Name = "miastoLabel";
             miastoLabel.Size = new System.Drawing.Size(41, 13);
-            miastoLabel.TabIndex = 9;
+            miastoLabel.TabIndex = 11;
             miastoLabel.Text = "Miasto:";
             // 
             // miastoTextBox
             // 
             this.miastoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "Miasto", true));
-            this.miastoTextBox.Location = new System.Drawing.Point(96, 139);
+            this.miastoTextBox.Location = new System.Drawing.Point(96, 113);
             this.miastoTextBox.Name = "miastoTextBox";
-            this.miastoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.miastoTextBox.TabIndex = 10;
+            this.miastoTextBox.Size = new System.Drawing.Size(164, 20);
+            this.miastoTextBox.TabIndex = 12;
             // 
             // ulicaLabel
             // 
             ulicaLabel.AutoSize = true;
-            ulicaLabel.Location = new System.Drawing.Point(12, 168);
+            ulicaLabel.Location = new System.Drawing.Point(12, 142);
             ulicaLabel.Name = "ulicaLabel";
             ulicaLabel.Size = new System.Drawing.Size(34, 13);
-            ulicaLabel.TabIndex = 11;
+            ulicaLabel.TabIndex = 13;
             ulicaLabel.Text = "Ulica:";
             // 
             // ulicaTextBox
             // 
             this.ulicaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "Ulica", true));
-            this.ulicaTextBox.Location = new System.Drawing.Point(96, 165);
+            this.ulicaTextBox.Location = new System.Drawing.Point(96, 139);
             this.ulicaTextBox.Name = "ulicaTextBox";
-            this.ulicaTextBox.Size = new System.Drawing.Size(100, 20);
-            this.ulicaTextBox.TabIndex = 12;
+            this.ulicaTextBox.Size = new System.Drawing.Size(164, 20);
+            this.ulicaTextBox.TabIndex = 14;
             // 
             // kod_PocztowyLabel
             // 
             kod_PocztowyLabel.AutoSize = true;
-            kod_PocztowyLabel.Location = new System.Drawing.Point(12, 194);
+            kod_PocztowyLabel.Location = new System.Drawing.Point(12, 168);
             kod_PocztowyLabel.Name = "kod_PocztowyLabel";
             kod_PocztowyLabel.Size = new System.Drawing.Size(78, 13);
-            kod_PocztowyLabel.TabIndex = 13;
+            kod_PocztowyLabel.TabIndex = 15;
             kod_PocztowyLabel.Text = "Kod Pocztowy:";
             // 
             // kod_PocztowyTextBox
             // 
             this.kod_PocztowyTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "Kod Pocztowy", true));
-            this.kod_PocztowyTextBox.Location = new System.Drawing.Point(96, 191);
+            this.kod_PocztowyTextBox.Location = new System.Drawing.Point(96, 165);
             this.kod_PocztowyTextBox.Name = "kod_PocztowyTextBox";
-            this.kod_PocztowyTextBox.Size = new System.Drawing.Size(100, 20);
-            this.kod_PocztowyTextBox.TabIndex = 14;
+            this.kod_PocztowyTextBox.Size = new System.Drawing.Size(164, 20);
+            this.kod_PocztowyTextBox.TabIndex = 16;
             // 
             // telefonLabel
             // 
             telefonLabel.AutoSize = true;
-            telefonLabel.Location = new System.Drawing.Point(12, 220);
+            telefonLabel.Location = new System.Drawing.Point(12, 194);
             telefonLabel.Name = "telefonLabel";
             telefonLabel.Size = new System.Drawing.Size(46, 13);
-            telefonLabel.TabIndex = 15;
+            telefonLabel.TabIndex = 17;
             telefonLabel.Text = "Telefon:";
             // 
             // telefonTextBox
             // 
             this.telefonTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "Telefon", true));
-            this.telefonTextBox.Location = new System.Drawing.Point(96, 217);
+            this.telefonTextBox.Location = new System.Drawing.Point(96, 191);
             this.telefonTextBox.Name = "telefonTextBox";
-            this.telefonTextBox.Size = new System.Drawing.Size(100, 20);
-            this.telefonTextBox.TabIndex = 16;
+            this.telefonTextBox.Size = new System.Drawing.Size(164, 20);
+            this.telefonTextBox.TabIndex = 18;
             // 
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new System.Drawing.Point(12, 246);
+            emailLabel.Location = new System.Drawing.Point(12, 220);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new System.Drawing.Size(35, 13);
-            emailLabel.TabIndex = 17;
+            emailLabel.TabIndex = 19;
             emailLabel.Text = "Email:";
             // 
             // emailTextBox
             // 
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "Email", true));
-            this.emailTextBox.Location = new System.Drawing.Point(96, 243);
+            this.emailTextBox.Location = new System.Drawing.Point(96, 217);
             this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(100, 20);
-            this.emailTextBox.TabIndex = 18;
-            // 
-            // nIPLabel
-            // 
-            nIPLabel.AutoSize = true;
-            nIPLabel.Location = new System.Drawing.Point(12, 272);
-            nIPLabel.Name = "nIPLabel";
-            nIPLabel.Size = new System.Drawing.Size(28, 13);
-            nIPLabel.TabIndex = 19;
-            nIPLabel.Text = "NIP:";
-            // 
-            // nIPTextBox
-            // 
-            this.nIPTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tableBindingSource, "NIP", true));
-            this.nIPTextBox.Location = new System.Drawing.Point(96, 269);
-            this.nIPTextBox.Name = "nIPTextBox";
-            this.nIPTextBox.Size = new System.Drawing.Size(100, 20);
-            this.nIPTextBox.TabIndex = 20;
+            this.emailTextBox.Size = new System.Drawing.Size(164, 20);
+            this.emailTextBox.TabIndex = 20;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -401,15 +361,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 387);
+            this.ClientSize = new System.Drawing.Size(284, 346);
             this.Controls.Add(idLabel);
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(imieLabel);
             this.Controls.Add(this.imieTextBox);
             this.Controls.Add(nazwiskoLabel);
             this.Controls.Add(this.nazwiskoTextBox);
-            this.Controls.Add(nazwa_FirmyLabel);
-            this.Controls.Add(this.nazwa_FirmyTextBox);
             this.Controls.Add(miastoLabel);
             this.Controls.Add(this.miastoTextBox);
             this.Controls.Add(ulicaLabel);
@@ -420,13 +378,11 @@
             this.Controls.Add(this.telefonTextBox);
             this.Controls.Add(emailLabel);
             this.Controls.Add(this.emailTextBox);
-            this.Controls.Add(nIPLabel);
-            this.Controls.Add(this.nIPTextBox);
             this.Controls.Add(this.tableBindingNavigator);
             this.Name = "klient_prywatny";
             this.Text = "klient_prywatny";
             this.Load += new System.EventHandler(this.klient_prywatny_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaklientowDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingNavigator)).EndInit();
             this.tableBindingNavigator.ResumeLayout(false);
@@ -438,10 +394,10 @@
 
         #endregion
 
-        private DataSet1 dataSet1;
+        private bazaklientowDataSet bazaklientowDataSet;
         private System.Windows.Forms.BindingSource tableBindingSource;
-        private DataSet1TableAdapters.TableTableAdapter tableTableAdapter;
-        private DataSet1TableAdapters.TableAdapterManager tableAdapterManager;
+        private bazaklientowDataSetTableAdapters.TableTableAdapter tableTableAdapter;
+        private bazaklientowDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator tableBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -458,12 +414,10 @@
         private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.TextBox imieTextBox;
         private System.Windows.Forms.TextBox nazwiskoTextBox;
-        private System.Windows.Forms.TextBox nazwa_FirmyTextBox;
         private System.Windows.Forms.TextBox miastoTextBox;
         private System.Windows.Forms.TextBox ulicaTextBox;
         private System.Windows.Forms.TextBox kod_PocztowyTextBox;
         private System.Windows.Forms.TextBox telefonTextBox;
         private System.Windows.Forms.TextBox emailTextBox;
-        private System.Windows.Forms.TextBox nIPTextBox;
     }
 }

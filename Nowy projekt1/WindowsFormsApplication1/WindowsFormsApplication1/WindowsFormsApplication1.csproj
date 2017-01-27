@@ -61,10 +61,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataSet1.Designer.cs">
+    <Compile Include="bazaklientowDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <DependentUpon>bazaklientowDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -78,17 +78,17 @@
     <Compile Include="Klient.Designer.cs">
       <DependentUpon>Klient.cs</DependentUpon>
     </Compile>
-    <Compile Include="klient_prywatny.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="klient_prywatny.Designer.cs">
-      <DependentUpon>klient_prywatny.cs</DependentUpon>
-    </Compile>
     <Compile Include="klient_firma.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="klient_firma.Designer.cs">
       <DependentUpon>klient_firma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="klient_prywatny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="klient_prywatny.Designer.cs">
+      <DependentUpon>klient_prywatny.cs</DependentUpon>
     </Compile>
     <Compile Include="logowanie.cs">
       <SubType>Form</SubType>
@@ -104,11 +104,11 @@
     <EmbeddedResource Include="Klient.resx">
       <DependentUpon>Klient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="klient_prywatny.resx">
-      <DependentUpon>klient_prywatny.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="klient_firma.resx">
       <DependentUpon>klient_firma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="klient_prywatny.resx">
+      <DependentUpon>klient_prywatny.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="logowanie.resx">
       <DependentUpon>logowanie.cs</DependentUpon>
@@ -123,16 +123,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
+    <None Include="bazaklientowDataSet.xsc">
+      <DependentUpon>bazaklientowDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DataSet1.xsd">
-      <SubType>Designer</SubType>
+    <None Include="bazaklientowDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>bazaklientowDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </None>
-    <None Include="DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
+    <None Include="bazaklientowDataSet.xss">
+      <DependentUpon>bazaklientowDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -190,12 +190,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BazaKlient.mdf">
+    <Content Include="bazaklientow.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="BazaKlient_log.ldf">
+    <Content Include="bazaklientow_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>BazaKlient.mdf</DependentUpon>
+      <DependentUpon>bazaklientow.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

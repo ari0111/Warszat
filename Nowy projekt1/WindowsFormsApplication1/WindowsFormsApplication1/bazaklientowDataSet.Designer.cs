@@ -20,9 +20,9 @@ namespace WindowsFormsApplication1 {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("bazaklientowDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DataSet1 : global::System.Data.DataSet {
+    public partial class bazaklientowDataSet : global::System.Data.DataSet {
         
         private TableDataTable tableTable;
         
@@ -30,7 +30,7 @@ namespace WindowsFormsApplication1 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public DataSet1() {
+        public bazaklientowDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace WindowsFormsApplication1 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected DataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected bazaklientowDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace WindowsFormsApplication1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DataSet1 cln = ((DataSet1)(base.Clone()));
+            bazaklientowDataSet cln = ((bazaklientowDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace WindowsFormsApplication1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DataSet1";
+            this.DataSetName = "bazaklientowDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DataSet1.xsd";
+            this.Namespace = "http://tempuri.org/bazaklientowDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableTable = new TableDataTable();
@@ -225,7 +225,7 @@ namespace WindowsFormsApplication1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DataSet1 ds = new DataSet1();
+            bazaklientowDataSet ds = new bazaklientowDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -287,6 +287,8 @@ namespace WindowsFormsApplication1 {
             
             private global::System.Data.DataColumn columnNazwa_Firmy;
             
+            private global::System.Data.DataColumn columnNIP;
+            
             private global::System.Data.DataColumn columnMiasto;
             
             private global::System.Data.DataColumn columnUlica;
@@ -296,8 +298,6 @@ namespace WindowsFormsApplication1 {
             private global::System.Data.DataColumn columnTelefon;
             
             private global::System.Data.DataColumn columnEmail;
-            
-            private global::System.Data.DataColumn columnNIP;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -366,6 +366,14 @@ namespace WindowsFormsApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn NIPColumn {
+                get {
+                    return this.columnNIP;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn MiastoColumn {
                 get {
                     return this.columnMiasto;
@@ -406,14 +414,6 @@ namespace WindowsFormsApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn NIPColumn {
-                get {
-                    return this.columnNIP;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -449,19 +449,19 @@ namespace WindowsFormsApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public TableRow AddTableRow(string Imie, string Nazwisko, string Nazwa_Firmy, string Miasto, string Ulica, decimal Kod_Pocztowy, decimal Telefon, string Email, decimal NIP) {
+            public TableRow AddTableRow(string Imie, string Nazwisko, string Nazwa_Firmy, decimal NIP, string Miasto, string Ulica, decimal Kod_Pocztowy, decimal Telefon, string Email) {
                 TableRow rowTableRow = ((TableRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         Imie,
                         Nazwisko,
                         Nazwa_Firmy,
+                        NIP,
                         Miasto,
                         Ulica,
                         Kod_Pocztowy,
                         Telefon,
-                        Email,
-                        NIP};
+                        Email};
                 rowTableRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTableRow);
                 return rowTableRow;
@@ -495,12 +495,12 @@ namespace WindowsFormsApplication1 {
                 this.columnImie = base.Columns["Imie"];
                 this.columnNazwisko = base.Columns["Nazwisko"];
                 this.columnNazwa_Firmy = base.Columns["Nazwa Firmy"];
+                this.columnNIP = base.Columns["NIP"];
                 this.columnMiasto = base.Columns["Miasto"];
                 this.columnUlica = base.Columns["Ulica"];
                 this.columnKod_Pocztowy = base.Columns["Kod Pocztowy"];
                 this.columnTelefon = base.Columns["Telefon"];
                 this.columnEmail = base.Columns["Email"];
-                this.columnNIP = base.Columns["NIP"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -514,6 +514,8 @@ namespace WindowsFormsApplication1 {
                 base.Columns.Add(this.columnNazwisko);
                 this.columnNazwa_Firmy = new global::System.Data.DataColumn("Nazwa Firmy", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNazwa_Firmy);
+                this.columnNIP = new global::System.Data.DataColumn("NIP", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNIP);
                 this.columnMiasto = new global::System.Data.DataColumn("Miasto", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMiasto);
                 this.columnUlica = new global::System.Data.DataColumn("Ulica", typeof(string), null, global::System.Data.MappingType.Element);
@@ -524,8 +526,6 @@ namespace WindowsFormsApplication1 {
                 base.Columns.Add(this.columnTelefon);
                 this.columnEmail = new global::System.Data.DataColumn("Email", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEmail);
-                this.columnNIP = new global::System.Data.DataColumn("NIP", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNIP);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
                 this.columnId.AutoIncrement = true;
@@ -614,7 +614,7 @@ namespace WindowsFormsApplication1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DataSet1 ds = new DataSet1();
+                bazaklientowDataSet ds = new bazaklientowDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -748,6 +748,22 @@ namespace WindowsFormsApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal NIP {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableTable.NIPColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NIP\' in table \'Table\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTable.NIPColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Miasto {
                 get {
                     try {
@@ -828,22 +844,6 @@ namespace WindowsFormsApplication1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal NIP {
-                get {
-                    try {
-                        return ((decimal)(this[this.tableTable.NIPColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'NIP\' in table \'Table\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableTable.NIPColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsImieNull() {
                 return this.IsNull(this.tableTable.ImieColumn);
             }
@@ -876,6 +876,18 @@ namespace WindowsFormsApplication1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetNazwa_FirmyNull() {
                 this[this.tableTable.Nazwa_FirmyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsNIPNull() {
+                return this.IsNull(this.tableTable.NIPColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetNIPNull() {
+                this[this.tableTable.NIPColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -937,18 +949,6 @@ namespace WindowsFormsApplication1 {
             public void SetEmailNull() {
                 this[this.tableTable.EmailColumn] = global::System.Convert.DBNull;
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsNIPNull() {
-                return this.IsNull(this.tableTable.NIPColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetNIPNull() {
-                this[this.tableTable.NIPColumn] = global::System.Convert.DBNull;
-            }
         }
         
         /// <summary>
@@ -986,7 +986,7 @@ namespace WindowsFormsApplication1 {
         }
     }
 }
-namespace WindowsFormsApplication1.DataSet1TableAdapters {
+namespace WindowsFormsApplication1.bazaklientowDataSetTableAdapters {
     
     
     /// <summary>
@@ -1114,16 +1114,16 @@ namespace WindowsFormsApplication1.DataSet1TableAdapters {
             tableMapping.ColumnMappings.Add("Imie", "Imie");
             tableMapping.ColumnMappings.Add("Nazwisko", "Nazwisko");
             tableMapping.ColumnMappings.Add("Nazwa Firmy", "Nazwa Firmy");
+            tableMapping.ColumnMappings.Add("NIP", "NIP");
             tableMapping.ColumnMappings.Add("Miasto", "Miasto");
             tableMapping.ColumnMappings.Add("Ulica", "Ulica");
             tableMapping.ColumnMappings.Add("Kod Pocztowy", "Kod Pocztowy");
             tableMapping.ColumnMappings.Add("Telefon", "Telefon");
             tableMapping.ColumnMappings.Add("Email", "Email");
-            tableMapping.ColumnMappings.Add("NIP", "NIP");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Table] WHERE (([Id] = @Original_Id) AND ((@IsNull_Imie = 1 AND [Imie] IS NULL) OR ([Imie] = @Original_Imie)) AND ((@IsNull_Nazwisko = 1 AND [Nazwisko] IS NULL) OR ([Nazwisko] = @Original_Nazwisko)) AND ((@IsNull_Nazwa_Firmy = 1 AND [Nazwa Firmy] IS NULL) OR ([Nazwa Firmy] = @Original_Nazwa_Firmy)) AND ((@IsNull_Miasto = 1 AND [Miasto] IS NULL) OR ([Miasto] = @Original_Miasto)) AND ((@IsNull_Ulica = 1 AND [Ulica] IS NULL) OR ([Ulica] = @Original_Ulica)) AND ((@IsNull_Kod_Pocztowy = 1 AND [Kod Pocztowy] IS NULL) OR ([Kod Pocztowy] = @Original_Kod_Pocztowy)) AND ((@IsNull_Telefon = 1 AND [Telefon] IS NULL) OR ([Telefon] = @Original_Telefon)) AND ((@IsNull_Email = 1 AND [Email] IS NULL) OR ([Email] = @Original_Email)) AND ((@IsNull_NIP = 1 AND [NIP] IS NULL) OR ([NIP] = @Original_NIP)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Table] WHERE (([Id] = @Original_Id) AND ((@IsNull_Imie = 1 AND [Imie] IS NULL) OR ([Imie] = @Original_Imie)) AND ((@IsNull_Nazwisko = 1 AND [Nazwisko] IS NULL) OR ([Nazwisko] = @Original_Nazwisko)) AND ((@IsNull_Nazwa_Firmy = 1 AND [Nazwa Firmy] IS NULL) OR ([Nazwa Firmy] = @Original_Nazwa_Firmy)) AND ((@IsNull_NIP = 1 AND [NIP] IS NULL) OR ([NIP] = @Original_NIP)) AND ((@IsNull_Miasto = 1 AND [Miasto] IS NULL) OR ([Miasto] = @Original_Miasto)) AND ((@IsNull_Ulica = 1 AND [Ulica] IS NULL) OR ([Ulica] = @Original_Ulica)) AND ((@IsNull_Kod_Pocztowy = 1 AND [Kod Pocztowy] IS NULL) OR ([Kod Pocztowy] = @Original_Kod_Pocztowy)) AND ((@IsNull_Telefon = 1 AND [Telefon] IS NULL) OR ([Telefon] = @Original_Telefon)) AND ((@IsNull_Email = 1 AND [Email] IS NULL) OR ([Email] = @Original_Email)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Imie", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Imie", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -1132,6 +1132,8 @@ namespace WindowsFormsApplication1.DataSet1TableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nazwisko", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nazwisko", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Nazwa_Firmy", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nazwa Firmy", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nazwa_Firmy", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nazwa Firmy", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_NIP", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NIP", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NIP", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "NIP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Miasto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Miasto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Miasto", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Miasto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Ulica", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ulica", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -1142,36 +1144,34 @@ namespace WindowsFormsApplication1.DataSet1TableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Telefon", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "Telefon", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Email", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_NIP", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NIP", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NIP", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "NIP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Table] ([Imie], [Nazwisko], [Nazwa Firmy], [Miasto], [Ulica], [Kod Pocztowy], [Telefon], [Email], [NIP]) VALUES (@Imie, @Nazwisko, @Nazwa_Firmy, @Miasto, @Ulica, @Kod_Pocztowy, @Telefon, @Email, @NIP);
-SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon, Email, NIP FROM [Table] WHERE (Id = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Table] ([Imie], [Nazwisko], [Nazwa Firmy], [NIP], [Miasto], [Ulica], [Kod Pocztowy], [Telefon], [Email]) VALUES (@Imie, @Nazwisko, @Nazwa_Firmy, @NIP, @Miasto, @Ulica, @Kod_Pocztowy, @Telefon, @Email);
+SELECT Id, Imie, Nazwisko, [Nazwa Firmy], NIP, Miasto, Ulica, [Kod Pocztowy], Telefon, Email FROM [Table] WHERE (Id = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Imie", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Imie", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nazwisko", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nazwisko", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nazwa_Firmy", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nazwa Firmy", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NIP", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "NIP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Miasto", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Miasto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ulica", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ulica", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Kod_Pocztowy", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "Kod Pocztowy", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Telefon", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "Telefon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NIP", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "NIP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Table] SET [Imie] = @Imie, [Nazwisko] = @Nazwisko, [Nazwa Firmy] = @Nazwa_Firmy, [Miasto] = @Miasto, [Ulica] = @Ulica, [Kod Pocztowy] = @Kod_Pocztowy, [Telefon] = @Telefon, [Email] = @Email, [NIP] = @NIP WHERE (([Id] = @Original_Id) AND ((@IsNull_Imie = 1 AND [Imie] IS NULL) OR ([Imie] = @Original_Imie)) AND ((@IsNull_Nazwisko = 1 AND [Nazwisko] IS NULL) OR ([Nazwisko] = @Original_Nazwisko)) AND ((@IsNull_Nazwa_Firmy = 1 AND [Nazwa Firmy] IS NULL) OR ([Nazwa Firmy] = @Original_Nazwa_Firmy)) AND ((@IsNull_Miasto = 1 AND [Miasto] IS NULL) OR ([Miasto] = @Original_Miasto)) AND ((@IsNull_Ulica = 1 AND [Ulica] IS NULL) OR ([Ulica] = @Original_Ulica)) AND ((@IsNull_Kod_Pocztowy = 1 AND [Kod Pocztowy] IS NULL) OR ([Kod Pocztowy] = @Original_Kod_Pocztowy)) AND ((@IsNull_Telefon = 1 AND [Telefon] IS NULL) OR ([Telefon] = @Original_Telefon)) AND ((@IsNull_Email = 1 AND [Email] IS NULL) OR ([Email] = @Original_Email)) AND ((@IsNull_NIP = 1 AND [NIP] IS NULL) OR ([NIP] = @Original_NIP)));
-SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon, Email, NIP FROM [Table] WHERE (Id = @Id)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Table] SET [Imie] = @Imie, [Nazwisko] = @Nazwisko, [Nazwa Firmy] = @Nazwa_Firmy, [NIP] = @NIP, [Miasto] = @Miasto, [Ulica] = @Ulica, [Kod Pocztowy] = @Kod_Pocztowy, [Telefon] = @Telefon, [Email] = @Email WHERE (([Id] = @Original_Id) AND ((@IsNull_Imie = 1 AND [Imie] IS NULL) OR ([Imie] = @Original_Imie)) AND ((@IsNull_Nazwisko = 1 AND [Nazwisko] IS NULL) OR ([Nazwisko] = @Original_Nazwisko)) AND ((@IsNull_Nazwa_Firmy = 1 AND [Nazwa Firmy] IS NULL) OR ([Nazwa Firmy] = @Original_Nazwa_Firmy)) AND ((@IsNull_NIP = 1 AND [NIP] IS NULL) OR ([NIP] = @Original_NIP)) AND ((@IsNull_Miasto = 1 AND [Miasto] IS NULL) OR ([Miasto] = @Original_Miasto)) AND ((@IsNull_Ulica = 1 AND [Ulica] IS NULL) OR ([Ulica] = @Original_Ulica)) AND ((@IsNull_Kod_Pocztowy = 1 AND [Kod Pocztowy] IS NULL) OR ([Kod Pocztowy] = @Original_Kod_Pocztowy)) AND ((@IsNull_Telefon = 1 AND [Telefon] IS NULL) OR ([Telefon] = @Original_Telefon)) AND ((@IsNull_Email = 1 AND [Email] IS NULL) OR ([Email] = @Original_Email)));
+SELECT Id, Imie, Nazwisko, [Nazwa Firmy], NIP, Miasto, Ulica, [Kod Pocztowy], Telefon, Email FROM [Table] WHERE (Id = @Id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Imie", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Imie", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nazwisko", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nazwisko", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nazwa_Firmy", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nazwa Firmy", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NIP", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "NIP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Miasto", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Miasto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ulica", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ulica", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Kod_Pocztowy", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "Kod Pocztowy", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Telefon", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "Telefon", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NIP", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "NIP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Imie", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Imie", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Imie", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Imie", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1179,6 +1179,8 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nazwisko", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nazwisko", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Nazwa_Firmy", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nazwa Firmy", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nazwa_Firmy", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Nazwa Firmy", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_NIP", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NIP", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NIP", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "NIP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Miasto", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Miasto", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Miasto", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Miasto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Ulica", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Ulica", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -1189,8 +1191,6 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Telefon", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "Telefon", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Email", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_NIP", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NIP", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NIP", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "NIP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -1198,7 +1198,7 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WindowsFormsApplication1.Properties.Settings.Default.BazaKlientConnectionString;
+            this._connection.ConnectionString = global::WindowsFormsApplication1.Properties.Settings.Default.bazaklientowConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1207,8 +1207,8 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon," +
-                " Email, NIP FROM dbo.[Table]";
+            this._commandCollection[0].CommandText = "SELECT Id, Imie, Nazwisko, [Nazwa Firmy], NIP, Miasto, Ulica, [Kod Pocztowy], Tel" +
+                "efon, Email FROM dbo.[Table]";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1216,7 +1216,7 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet1.TableDataTable dataTable) {
+        public virtual int Fill(bazaklientowDataSet.TableDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1229,9 +1229,9 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet1.TableDataTable GetData() {
+        public virtual bazaklientowDataSet.TableDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet1.TableDataTable dataTable = new DataSet1.TableDataTable();
+            bazaklientowDataSet.TableDataTable dataTable = new bazaklientowDataSet.TableDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1239,14 +1239,14 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet1.TableDataTable dataTable) {
+        public virtual int Update(bazaklientowDataSet.TableDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DataSet1 dataSet) {
+        public virtual int Update(bazaklientowDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Table");
         }
         
@@ -1269,7 +1269,7 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Id, string Original_Imie, string Original_Nazwisko, string Original_Nazwa_Firmy, string Original_Miasto, string Original_Ulica, global::System.Nullable<decimal> Original_Kod_Pocztowy, global::System.Nullable<decimal> Original_Telefon, string Original_Email, global::System.Nullable<decimal> Original_NIP) {
+        public virtual int Delete(int Original_Id, string Original_Imie, string Original_Nazwisko, string Original_Nazwa_Firmy, global::System.Nullable<decimal> Original_NIP, string Original_Miasto, string Original_Ulica, global::System.Nullable<decimal> Original_Kod_Pocztowy, global::System.Nullable<decimal> Original_Telefon, string Original_Email) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Id));
             if ((Original_Imie == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -1295,53 +1295,53 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Nazwa_Firmy));
             }
-            if ((Original_Miasto == null)) {
+            if ((Original_NIP.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((decimal)(Original_NIP.Value));
+            }
+            else {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_Miasto));
-            }
-            if ((Original_Ulica == null)) {
+            if ((Original_Miasto == null)) {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_Ulica));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_Miasto));
             }
-            if ((Original_Kod_Pocztowy.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((decimal)(Original_Kod_Pocztowy.Value));
-            }
-            else {
+            if ((Original_Ulica == null)) {
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
-            if ((Original_Telefon.HasValue == true)) {
+            else {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_Ulica));
+            }
+            if ((Original_Kod_Pocztowy.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((decimal)(Original_Telefon.Value));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((decimal)(Original_Kod_Pocztowy.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
-            if ((Original_Email == null)) {
+            if ((Original_Telefon.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((decimal)(Original_Telefon.Value));
+            }
+            else {
                 this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[16].Value = ((string)(Original_Email));
-            }
-            if ((Original_NIP.HasValue == true)) {
-                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[18].Value = ((decimal)(Original_NIP.Value));
-            }
-            else {
+            if ((Original_Email == null)) {
                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_Email));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1363,7 +1363,7 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Imie, string Nazwisko, string Nazwa_Firmy, string Miasto, string Ulica, global::System.Nullable<decimal> Kod_Pocztowy, global::System.Nullable<decimal> Telefon, string Email, global::System.Nullable<decimal> NIP) {
+        public virtual int Insert(string Imie, string Nazwisko, string Nazwa_Firmy, global::System.Nullable<decimal> NIP, string Miasto, string Ulica, global::System.Nullable<decimal> Kod_Pocztowy, global::System.Nullable<decimal> Telefon, string Email) {
             if ((Imie == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -1382,41 +1382,41 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Nazwa_Firmy));
             }
-            if ((Miasto == null)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            if ((NIP.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((decimal)(NIP.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Miasto));
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((Ulica == null)) {
+            if ((Miasto == null)) {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Ulica));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Miasto));
             }
-            if ((Kod_Pocztowy.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((decimal)(Kod_Pocztowy.Value));
-            }
-            else {
+            if ((Ulica == null)) {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
-            if ((Telefon.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((decimal)(Telefon.Value));
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Ulica));
+            }
+            if ((Kod_Pocztowy.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((decimal)(Kod_Pocztowy.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            if ((Email == null)) {
+            if ((Telefon.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((decimal)(Telefon.Value));
+            }
+            else {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(Email));
-            }
-            if ((NIP.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((decimal)(NIP.Value));
-            }
-            else {
+            if ((Email == null)) {
                 this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(Email));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1442,22 +1442,22 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
                     string Imie, 
                     string Nazwisko, 
                     string Nazwa_Firmy, 
+                    global::System.Nullable<decimal> NIP, 
                     string Miasto, 
                     string Ulica, 
                     global::System.Nullable<decimal> Kod_Pocztowy, 
                     global::System.Nullable<decimal> Telefon, 
                     string Email, 
-                    global::System.Nullable<decimal> NIP, 
                     int Original_Id, 
                     string Original_Imie, 
                     string Original_Nazwisko, 
                     string Original_Nazwa_Firmy, 
+                    global::System.Nullable<decimal> Original_NIP, 
                     string Original_Miasto, 
                     string Original_Ulica, 
                     global::System.Nullable<decimal> Original_Kod_Pocztowy, 
                     global::System.Nullable<decimal> Original_Telefon, 
                     string Original_Email, 
-                    global::System.Nullable<decimal> Original_NIP, 
                     int Id) {
             if ((Imie == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
@@ -1477,41 +1477,41 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
             else {
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Nazwa_Firmy));
             }
-            if ((Miasto == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            if ((NIP.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((decimal)(NIP.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Miasto));
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((Ulica == null)) {
+            if ((Miasto == null)) {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Ulica));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Miasto));
             }
-            if ((Kod_Pocztowy.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((decimal)(Kod_Pocztowy.Value));
-            }
-            else {
+            if ((Ulica == null)) {
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
-            if ((Telefon.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((decimal)(Telefon.Value));
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Ulica));
+            }
+            if ((Kod_Pocztowy.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((decimal)(Kod_Pocztowy.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            if ((Email == null)) {
+            if ((Telefon.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((decimal)(Telefon.Value));
+            }
+            else {
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Email));
-            }
-            if ((NIP.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((decimal)(NIP.Value));
-            }
-            else {
+            if ((Email == null)) {
                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Email));
             }
             this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_Id));
             if ((Original_Imie == null)) {
@@ -1538,53 +1538,53 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
                 this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_Nazwa_Firmy));
             }
-            if ((Original_Miasto == null)) {
+            if ((Original_NIP.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((decimal)(Original_NIP.Value));
+            }
+            else {
                 this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_Miasto));
-            }
-            if ((Original_Ulica == null)) {
+            if ((Original_Miasto == null)) {
                 this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_Ulica));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_Miasto));
             }
-            if ((Original_Kod_Pocztowy.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((decimal)(Original_Kod_Pocztowy.Value));
-            }
-            else {
+            if ((Original_Ulica == null)) {
                 this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
             }
-            if ((Original_Telefon.HasValue == true)) {
+            else {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_Ulica));
+            }
+            if ((Original_Kod_Pocztowy.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((decimal)(Original_Telefon.Value));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((decimal)(Original_Kod_Pocztowy.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
             }
-            if ((Original_Email == null)) {
+            if ((Original_Telefon.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((decimal)(Original_Telefon.Value));
+            }
+            else {
                 this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[25].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_Email));
-            }
-            if ((Original_NIP.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[27].Value = ((decimal)(Original_NIP.Value));
-            }
-            else {
+            if ((Original_Email == null)) {
                 this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[27].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_Email));
             }
             this.Adapter.UpdateCommand.Parameters[28].Value = ((int)(Id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
@@ -1611,23 +1611,23 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
                     string Imie, 
                     string Nazwisko, 
                     string Nazwa_Firmy, 
+                    global::System.Nullable<decimal> NIP, 
                     string Miasto, 
                     string Ulica, 
                     global::System.Nullable<decimal> Kod_Pocztowy, 
                     global::System.Nullable<decimal> Telefon, 
                     string Email, 
-                    global::System.Nullable<decimal> NIP, 
                     int Original_Id, 
                     string Original_Imie, 
                     string Original_Nazwisko, 
                     string Original_Nazwa_Firmy, 
+                    global::System.Nullable<decimal> Original_NIP, 
                     string Original_Miasto, 
                     string Original_Ulica, 
                     global::System.Nullable<decimal> Original_Kod_Pocztowy, 
                     global::System.Nullable<decimal> Original_Telefon, 
-                    string Original_Email, 
-                    global::System.Nullable<decimal> Original_NIP) {
-            return this.Update(Imie, Nazwisko, Nazwa_Firmy, Miasto, Ulica, Kod_Pocztowy, Telefon, Email, NIP, Original_Id, Original_Imie, Original_Nazwisko, Original_Nazwa_Firmy, Original_Miasto, Original_Ulica, Original_Kod_Pocztowy, Original_Telefon, Original_Email, Original_NIP, Original_Id);
+                    string Original_Email) {
+            return this.Update(Imie, Nazwisko, Nazwa_Firmy, NIP, Miasto, Ulica, Kod_Pocztowy, Telefon, Email, Original_Id, Original_Imie, Original_Nazwisko, Original_Nazwa_Firmy, Original_NIP, Original_Miasto, Original_Ulica, Original_Kod_Pocztowy, Original_Telefon, Original_Email, Original_Id);
         }
     }
     
@@ -1722,7 +1722,7 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(bazaklientowDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tableTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Table.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1741,7 +1741,7 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(bazaklientowDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tableTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Table.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1759,7 +1759,7 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(bazaklientowDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._tableTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Table.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1801,7 +1801,7 @@ SELECT Id, Imie, Nazwisko, [Nazwa Firmy], Miasto, Ulica, [Kod Pocztowy], Telefon
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(DataSet1 dataSet) {
+        public virtual int UpdateAll(bazaklientowDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
