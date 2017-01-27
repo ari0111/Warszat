@@ -61,10 +61,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bazaklientowDataSet.Designer.cs">
+    <Compile Include="Database1DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>bazaklientowDataSet.xsd</DependentUpon>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -123,16 +123,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="bazaklientowDataSet.xsc">
-      <DependentUpon>bazaklientowDataSet.xsd</DependentUpon>
+    <None Include="app.config" />
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </None>
-    <None Include="bazaklientowDataSet.xsd">
+    <None Include="Database1DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>bazaklientowDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="bazaklientowDataSet.xss">
-      <DependentUpon>bazaklientowDataSet.xsd</DependentUpon>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -143,9 +144,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ikona-naprawy.png" />
@@ -190,12 +188,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bazaklientow.mdf">
+    <Content Include="Database1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="bazaklientow_log.ldf">
+    <Content Include="Database1_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>bazaklientow.mdf</DependentUpon>
+      <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

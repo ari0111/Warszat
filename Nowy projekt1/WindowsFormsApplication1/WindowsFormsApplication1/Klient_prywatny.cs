@@ -16,20 +16,5 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
-
-        private void tableBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.tableBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.bazaklientowDataSet);
-
-        }
-
-        private void klient_prywatny_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'bazaklientowDataSet.Table' table. You can move, or remove it, as needed.
-            this.tableTableAdapter.Fill(this.bazaklientowDataSet.Table);
-
-        }
     }
 }
