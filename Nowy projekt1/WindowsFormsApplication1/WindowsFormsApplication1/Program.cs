@@ -16,11 +16,7 @@ namespace WindowsFormsApplication1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            logowanie formularzLogowania = new logowanie();
-            if (formularzLogowania.ShowDialog()==DialogResult.OK)
-            {
-                Application.Run(new Menu());
-            }
+            Application.Run(new Menu());
         }
     }
 }

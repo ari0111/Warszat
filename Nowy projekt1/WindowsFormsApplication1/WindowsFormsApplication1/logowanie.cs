@@ -17,21 +17,11 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (textBox1.Text==textBox2.Text)
-            {
-                this.DialogResult = DialogResult.OK;
-            }
-            else
-            {
-                MessageBox.Show("Błędny login lub hasło");
-            }
-        }
+       
 
-        private void button2_Click(object sender, EventArgs e)
+        private void logowanie_Load(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.Cancel;
+
         }
     }
 }
