@@ -1,0 +1,15 @@
+C:\Users\Sławek\Documents\GitHub\Warszat\Nowy projekt1\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Sławek\Documents\GitHub\Warszat\Nowy projekt1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Sławek\Documents\GitHub\Warszat\Nowy projekt1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Menu.resources
+C:\Users\Sławek\Documents\GitHub\Warszat\Nowy projekt1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Klient.resources
+C:\Users\Sławek\Documents\GitHub\Warszat\Nowy projekt1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.klient_firma.resources
+C:\Users\Sławek\Documents\GitHub\Warszat\Nowy projekt1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.klient_prywatny.resources
+C:\Users\Sławek\Documents\GitHub\Warszat\Nowy projekt1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.logowanie.resources
+C:\Users\Sławek\Documents\GitHub\Warszat\Nowy projekt1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Sławek\Documents\GitHub\Warszat\Nowy projekt1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Sławek\Documents\GitHub\Warszat\Nowy projekt1\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Sławek\Documents\GitHub\Warszat\Nowy projekt1\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Sławek\Documents\GitHub\Warszat\Nowy projekt1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Sławek\Documents\GitHub\Warszat\Nowy projekt1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Sławek\Documents\GitHub\Warszat\Nowy projekt1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.xml.resources
+C:\Users\Sławek\Documents\GitHub\Warszat\Nowy projekt1\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Samochody.resources
