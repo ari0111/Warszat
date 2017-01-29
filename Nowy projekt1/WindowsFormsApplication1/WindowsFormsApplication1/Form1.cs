@@ -17,6 +17,7 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         private void Menu_Load(object sender, EventArgs e)
         {
@@ -37,6 +38,8 @@ namespace WindowsFormsApplication1
             Klient form = new Klient();
             form.Show();
         }
+=======
+>>>>>>> parent of 31cb799... 2 zmiany (kosztorys)
 =======
 >>>>>>> parent of 31cb799... 2 zmiany (kosztorys)
     }
