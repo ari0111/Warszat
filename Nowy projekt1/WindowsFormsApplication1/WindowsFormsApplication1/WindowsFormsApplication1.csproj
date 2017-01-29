@@ -61,11 +61,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database1DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,18 +72,6 @@
     </Compile>
     <Compile Include="Klient.Designer.cs">
       <DependentUpon>Klient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="klient_firma.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="klient_firma.Designer.cs">
-      <DependentUpon>klient_firma.cs</DependentUpon>
-    </Compile>
-    <Compile Include="klient_prywatny.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="klient_prywatny.Designer.cs">
-      <DependentUpon>klient_prywatny.cs</DependentUpon>
     </Compile>
     <Compile Include="logowanie.cs">
       <SubType>Form</SubType>
@@ -104,12 +87,6 @@
     <EmbeddedResource Include="Klient.resx">
       <DependentUpon>Klient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="klient_firma.resx">
-      <DependentUpon>klient_firma.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="klient_prywatny.resx">
-      <DependentUpon>klient_prywatny.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="logowanie.resx">
       <DependentUpon>logowanie.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,17 +101,6 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
-    <None Include="Database1DataSet.xsc">
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Database1DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Database1DataSet.xss">
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -186,15 +152,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Database1.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database1_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

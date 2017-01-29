@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Menu : Form
+    public partial class Form1 : Form
     {
-        public Menu()
+        public Form1()
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         private void Menu_Load(object sender, EventArgs e)
         {
@@ -36,5 +37,7 @@ namespace WindowsFormsApplication1
             Klient form = new Klient();
             form.Show();
         }
+=======
+>>>>>>> parent of 31cb799... 2 zmiany (kosztorys)
     }
 }
