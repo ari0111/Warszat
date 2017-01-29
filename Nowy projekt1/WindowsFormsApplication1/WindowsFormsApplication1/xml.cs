@@ -19,7 +19,7 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            stworzPlikXml tworzenie = new stworzPlikXml();
+            obslugaXml tworzenie = new obslugaXml();
             tworzenie.tworz();
 
         }

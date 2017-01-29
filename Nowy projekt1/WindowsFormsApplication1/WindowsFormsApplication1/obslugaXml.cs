@@ -9,10 +9,10 @@ using System.Xml;
 
 namespace WindowsFormsApplication1
 {
-    class stworzPlikXml
+    class obslugaXml
     {
         public void tworz() {
-            XmlTextWriter writer = new XmlTextWriter("product.xml", System.Text.Encoding.UTF8);
+            XmlTextWriter writer = new XmlTextWriter(string nazwa, System.Text.Encoding.UTF8);
             writer.WriteStartDocument(true);
             writer.Formatting = Formatting.Indented;
             writer.Indentation = 2;
