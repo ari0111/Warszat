@@ -10,28 +10,18 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    
-    public partial class Menu : Form
+    public partial class xml : Form
     {
-        public Menu()
+        public xml()
         {
             InitializeComponent();
-        }
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Klient form = new Klient();
-            form.Show();
-        }
-
-        private void Menu_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            xml formaxml = new xml(); 
-            formaxml.Show();
+            stworzPlikXml tworzenie = new stworzPlikXml();
+            tworzenie.tworz();
+
         }
     }
 }
